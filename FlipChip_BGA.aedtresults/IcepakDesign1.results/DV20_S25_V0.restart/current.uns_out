@@ -1,0 +1,455 @@
+Transcript Start Time:  12:42:26, 24 Aug 2025 India Standard Time 
+Current Directory: "C:\temp\icepak_DESKTOP-VLOSL63_7036.pjt"
+
+Build Time: May 13 2025 10:04:50 EST  Build Id: 200 Revision: dd59eb8b1e  Branch: releases/release-25.2 
+Executable Path: C:/PROGRA~1/ANSYSI~1/ANSYSS~1/v252/AnsysEM/fluent/ntbin/win64/fluent.exe
+
+---------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                      
+---------------------------------------------------------------------------------------------
+n0*   DESKTOP-VLOSL63  1/4  Windows-x64  10388  AMD Ryzen 3 2200G with Radeon Vega Graphics 
+host  DESKTOP-VLOSL63       Windows-x64  9672   AMD Ryzen 3 2200G with Radeon Vega Graphics 
+
+MPI Option Selected: intel
+Selected system interconnect: default
+---------------------------------------------------------------------------------------------
+
+Cortex Process ID: 3980 
+License Server Path: () 
+
+> (define t0)
+t0
+
+
+> (set! t0 (cpu-time))
+t0
+
+
+> (define wt0)
+wt0
+
+
+> (set! wt0 (time))
+wt0
+
+
+> (if (err-protect (%enable-dynamic-mesh-node-ids #t)) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+"Ok"
+
+
+> (if (err-protect (ti-menu-load-string "rc Setup1.cas")) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.cas_err"))))
+rc Setup1.casMulticore processors detected. Processor affinity set!
+
+Reading "Setup1.cas"...
+
+Buffering for file scan...
+
+Icepak
+
+
+   39305 nodes.
+    2208 mixed cells, zone  1.
+    1156 mixed cells, zone  3.
+    2312 mixed cells, zone  4.
+    1472 mixed cells, zone  5.
+   24894 mixed cells, zone  6.
+    4232 mixed interior faces, zone  7.
+    2244 mixed interior faces, zone  9.
+    5644 mixed interior faces, zone 10.
+    2184 mixed interior faces, zone 11.
+   69334 mixed interior faces, zone 12.
+    2208 mixed wall faces, zone 13.
+    2208 mixed wall faces, zone 14.
+    2208 shadow face pairs. 
+    2020 mixed wall faces, zone 15.
+    2020 mixed wall faces, zone 16.
+    2020 shadow face pairs. 
+     136 mixed wall faces, zone 17.
+     136 mixed wall faces, zone 18.
+     136 shadow face pairs. 
+    1156 mixed wall faces, zone 19.
+    1156 mixed wall faces, zone 20.
+    1156 shadow face pairs. 
+     900 mixed wall faces, zone 21.
+     900 mixed wall faces, zone 22.
+     900 shadow face pairs. 
+     272 mixed wall faces, zone 23.
+     272 mixed wall faces, zone 24.
+     272 shadow face pairs. 
+    1156 mixed wall faces, zone 25.
+    1156 mixed wall faces, zone 26.
+    1156 shadow face pairs. 
+     420 mixed wall faces, zone 27.
+     420 mixed wall faces, zone 28.
+     420 shadow face pairs. 
+     256 mixed wall faces, zone 29.
+     256 mixed wall faces, zone 30.
+     256 shadow face pairs. 
+    3612 mixed wall faces, zone 31.
+    3612 mixed wall faces, zone 32.
+    3612 shadow face pairs. 
+    7462 mixed wall faces, zone 33.
+
+Building...
+     mesh
+     materials,
+     interface,
+     domains,
+     zones,
+	region_side
+	pp1_flipchip_bga_ball_10_10_side_shadow
+	pp1_flipchip_bga_ball_10_10_side
+	pp1_flipchip_bga_ball_side_1_shadow
+	pp1_flipchip_bga_ball_side_1
+	pp1_flipchip_bga_ball_side_shadow
+	pp1_flipchip_bga_ball_side
+	pp1_flipchip_bga_die_side_shadow
+	pp1_flipchip_bga_die_side
+	pp1_flipchip_bga_via_side_1_shadow
+	pp1_flipchip_bga_via_side_1
+	pp1_flipchip_bga_via_side_shadow
+	pp1_flipchip_bga_via_side
+	pp1_flipchip_bga_substrate_side_shadow
+	pp1_flipchip_bga_substrate_side
+	pp1_flipchip_bga_trace1_side_1_shadow
+	pp1_flipchip_bga_trace1_side_1
+	pp1_flipchip_bga_trace1_side_shadow
+	pp1_flipchip_bga_trace1_side
+	pp1_flipchip_bga_die_source_side_shadow
+	pp1_flipchip_bga_die_source_side
+	pp1_flipchip_bga_ball_solid
+	pp1_flipchip_bga_via_solid
+	pp1_flipchip_bga_substrate_solid
+	pp1_flipchip_bga_die_solid
+	region_fluid
+	interior-12
+	interior-11
+	interior-10
+	interior-9
+	interior-7
+     parallel,
+
+Note: 3d, pressure-based, laminar case read into
+      3d, double precision, pressure-based, laminar solver.
+
+
+
+Done.
+"Ok"
+
+
+> (ti-menu-load-string "file hdf-files? no")
+file hdf-files? no#t
+
+
+> (load "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/icepak.scm")
+Loading "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/icepak.scm"
+Done.
+#f
+
+
+> (begin (define g_c (car (%grid-check))) (if g_c (begin (define port (open-output-file "GRID_FAIL")) (exit))))
+
+ Domain Extents:
+   x-coordinate: min (m) = -7.500000e-03, max (m) = 2.250000e-02
+   y-coordinate: min (m) = -7.500000e-03, max (m) = 2.250000e-02
+   z-coordinate: min (m) = -7.500000e-04, max (m) = 2.250000e-03
+ Volume statistics:
+   minimum volume (m3): 7.642957e-13
+   maximum volume (m3): 2.331565e-10
+     total volume (m3): 2.700000e-06
+ Face area statistics:
+   minimum face area (m2): 1.368745e-08
+   maximum face area (m2): 4.054145e-07
+ Checking mesh............................
+ Done.
+#f
+
+
+> (load "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/benchmark.scm")
+Loading "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/benchmark.scm"
+Done.
+#f
+
+
+> (if (err-protect (ti-menu-load-string "def mo rad s2s? no")) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+def mo rad s2s? no"Ok"
+
+
+> (if (err-protect (ti-menu-load-string "s i i")) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.init_err"))))
+s i i"Ok"
+
+
+> (set! suffix-expand-filename (lambda (fn suffix) fn))
+suffix-expand-filename
+
+
+> (if (err-protect (%set-void-dynamic-mesh-node-ids)) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+"Ok"
+
+
+> wc Setup1.nc_cas
+
+Writing "Setup1.nc_cas"...
+
+    2208 hexahedral cells, zone  1, binary.
+    1156 hexahedral cells, zone  3, binary.
+    2312 hexahedral cells, zone  4, binary.
+    1472 mixed cells, zone  5, binary.
+   24894 mixed cells, zone  6, binary.
+    4232 quadrilateral interior faces, zone  7, binary.
+    2244 quadrilateral interior faces, zone  9, binary.
+    5644 quadrilateral interior faces, zone 10, binary.
+    2184 mixed interior faces, zone 11, binary.
+   69334 mixed interior faces, zone 12, binary.
+    2208 quadrilateral wall faces, zone 13, binary.
+    2208 quadrilateral wall faces, zone 14, binary.
+    2020 quadrilateral wall faces, zone 15, binary.
+    2020 quadrilateral wall faces, zone 16, binary.
+     136 quadrilateral wall faces, zone 17, binary.
+     136 quadrilateral wall faces, zone 18, binary.
+    1156 quadrilateral wall faces, zone 19, binary.
+    1156 quadrilateral wall faces, zone 20, binary.
+     900 quadrilateral wall faces, zone 21, binary.
+     900 quadrilateral wall faces, zone 22, binary.
+     272 quadrilateral wall faces, zone 23, binary.
+     272 quadrilateral wall faces, zone 24, binary.
+    1156 quadrilateral wall faces, zone 25, binary.
+    1156 quadrilateral wall faces, zone 26, binary.
+     420 quadrilateral wall faces, zone 27, binary.
+     420 quadrilateral wall faces, zone 28, binary.
+     256 quadrilateral wall faces, zone 29, binary.
+     256 quadrilateral wall faces, zone 30, binary.
+    3612 mixed wall faces, zone 31, binary.
+    3612 mixed wall faces, zone 32, binary.
+    7462 mixed wall faces, zone 33, binary.
+    2208 shadow face pairs, binary.
+    2020 shadow face pairs, binary.
+     136 shadow face pairs, binary.
+    1156 shadow face pairs, binary.
+     900 shadow face pairs, binary.
+     272 shadow face pairs, binary.
+    1156 shadow face pairs, binary.
+     420 shadow face pairs, binary.
+     256 shadow face pairs, binary.
+    3612 shadow face pairs, binary.
+   39305 nodes, binary.
+   39305 node flags, binary.
+   39305 node sids, binary.
+Done.
+
+
+> (ti-menu-load-string "file hdf-files? yes")
+file hdf-files? yesFast-loading "C:\PROGRA~1\ANSYSI~1\ANSYSS~1\v252\AnsysEM\fluent\fluent25.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+#t
+
+
+> (if (err-protect (%write-nodemap "Setup1.nodemap")) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+999999: Wrote nodemap for 39305 nodes
+0: Using dynamic mesh id
+"Ok"
+
+
+> (load "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/monitor-create.scm")
+Loading "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/monitor-create.scm"
+Done.
+#f
+
+
+> (read-monitors "Setup1.pmon" "Setup1")
+(monitor-1 (unsteady? . #f) (avg-over . 1) (write? . #t) (print? . #f) (plot? . #f) (freq . 1) (unit) (file . "Setup1.1.PP1_Flipchip_BGA_substrate.out") (surfaces 1) (sub-function . "Static Temperature") (domain . "mixture") (function . "Temperature...") (x-axis . "Iteration") (window . -1) (report . "Vertex Average"))
+(monitor-2 (unsteady? . #f) (avg-over . 1) (write? . #t) (print? . #f) (plot? . #f) (freq . 1) (unit) (file . "Setup1.2.PP1_Flipchip_BGA_die_underfill.out") (surfaces 2) (sub-function . "Static Temperature") (domain . "mixture") (function . "Temperature...") (x-axis . "Iteration") (window . -2) (report . "Vertex Average"))
+(monitor-3 (unsteady? . #f) (avg-over . 1) (write? . #t) (print? . #f) (plot? . #f) (freq . 1) (unit) (file . "Setup1.3.PP1_Flipchip_BGA_die.out") (surfaces 3) (sub-function . "Static Temperature") (domain . "mixture") (function . "Temperature...") (x-axis . "Iteration") (window . -3) (report . "Vertex Average"))
+
+
+> (retain-monitor-usage #f)
+Information: Converting monitor monitor-3 to report definition.
+Information: Converting monitor monitor-2 to report definition.
+Information: Converting monitor monitor-1 to report definition.
+*monset->plot-set-window-no-graphics*
+
+
+> (define ps-port)
+ps-port
+
+
+> (set! ps-port (open-file "init_proc_stats" "wl"))
+ps-port
+
+
+> (set-echo-ports! *console-output-port* (cons ps-port (echo-ports *console-output-port*)))
+(#[port 0x2151b5e0] #[port 0x267573a0] #[port 0xd648060])
+
+
+> (proc-stats)
+
+------------------------------------------------------------------------------
+       | Virtual Mem Usage (GB)   | Resident Mem Usage(GB)   |              
+ID     | Current      Peak        | Current      Peak        | Page Faults  
+------------------------------------------------------------------------------
+host   | 0.651012     0.685722    | 0.631847     0.662663    | 1.912e+05  
+n0     | 2.28283      2.2847      | 0.177864     0.179562    | 8.411e+04  
+------------------------------------------------------------------------------
+Total  | 2.93385             2.97042           | 2.753e+05  
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+                    | Virtual Mem Usage (GB)    | Resident Mem Usage(GB)    | System Mem (GB)          
+Hostname            | Current      Peak         | Current      Peak         |                          
+------------------------------------------------------------------------------------------------
+DESKTOP-VLOSL63     | 2.93385      2.97042      | 0.809723     0.842224     | 7.43188      
+------------------------------------------------------------------------------------------------
+Total               | 2.93385      2.97042      | 0.809723     0.842224     |           
+------------------------------------------------------------------------------------------------
+()
+
+
+> (set-echo-ports! *console-output-port* (delete ps-port (echo-ports *console-output-port*)))
+(#[port 0x267573a0] #[port 0xd648060])
+
+
+> (flush-output-port ps-port)
+#f
+
+
+> (close-output-port ps-port)
+#f
+
+
+> (if (err-protect (load "Setup1.sovcommands.scm") #t) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.soln_err"))))
+Loading ".\.\Setup1.sovcommands.scm"
+Done.
+"Ok"
+
+
+> (define t1)
+t1
+
+
+> (set! t1 (cpu-time))
+t1
+
+
+> (define wt1)
+wt1
+
+
+> (set! wt1 (time))
+wt1
+
+
+> (format "Solver Initialization: cpu=~a real=~a~%" (- t1 t0) (- wt1 wt0))
+Solver Initialization: cpu=13.330464 real=13.317922
+
+
+> (if (err-protect (benchmark-aedt '(icepak-iterate 100 "Setup1" "Setup1.res" 100 1 1))) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.soln_err"))))
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+     1  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  5.2211e-06  0:00:38   99
+     2  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  3.4134e-07  0:00:36   98
+     3  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  2.8654e-08  0:00:32   97
+
+Writing "Setup1.resd"...
+
+Writing elements...
+Wrote 96 triangles.
+Wrote 31638 quads.
+Writing face results...
+Wrote Heat Flow Rate on 31734 faces. 
+Wrote Heat Flux on 31734 faces. 
+Wrote Temperature on 31734 faces. 
+Wrote Mass Flux on 31734 faces. 
+Wrote X Velocity on 31734 faces. 
+Wrote Y Velocity on 31734 faces. 
+Wrote Z Velocity on 31734 faces. 
+Wrote Pressure on 31734 faces. 
+
+Writing node results...
+Writing ICEM domain scalar "Pressure"
+Wrote Pressure on 39305 nodes.
+Writing ICEM domain scalar "Temperature"
+Wrote Temperature on 39305 nodes.
+Writing ICEM domain scalar "X Velocity"
+Wrote X Velocity on 39305 nodes.
+Writing ICEM domain scalar "Y Velocity"
+Wrote Y Velocity on 39305 nodes.
+Writing ICEM domain scalar "Z Velocity"
+Wrote Z Velocity on 39305 nodes.
+0: Using dynamic mesh id
+Done.
+
+surface reset-zone-surfaces"Ok"
+Writing Setup1.sov... 
+report s-i vertex-max Available surfaces: (pp1_flipchip_bga_trace1_side pp1_flipchip_bga_trace1_side_shadow pp1_flipchip_bga_substrate_side pp1_flipchip_bga_substrate_side_shadow pp1_flipchip_bga_via_side pp1_flipchip_bga_via_side_shadow pp1_flipchip_bga_trace1_side_1 pp1_flipchip_bga_trace1_side_1_shadow pp1_flipchip_bga_via_side_1 pp1_flipchip_bga_via_side_1_shadow pp1_flipchip_bga_die_side pp1_flipchip_bga_die_side_shadow pp1_flipchip_bga_die_source_side pp1_flipchip_bga_die_source_side_shadow pp1_flipchip_bga_ball_side pp1_flipchip_bga_ball_side_shadow pp1_flipchip_bga_ball_10_10_side pp1_flipchip_bga_ball_10_10_side_shadow pp1_flipchip_bga_ball_side_1 pp1_flipchip_bga_ball_side_1_shadow region_side p3 p2 p1)
+(pp1_flipchip_bga_die_source_side pp1_flipchip_bga_substrate_side ) temperature yes Setup1.sov"Ok"
+report fluxes heat-transfer no (pp1_flipchip_bga_die_source_side_shadow pp1_flipchip_bga_die_source_side pp1_flipchip_bga_substrate_side_shadow pp1_flipchip_bga_substrate_side ) yes Setup1.sov"Ok"
+Completed Writing Setup1.sov... 
+
+Writing to DESKTOP-VLOSL63:"C:\temp\icepak_DESKTOP-VLOSL63_7036.pjt\Setup1.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+Writing data to Setup1.dat ...
+	x-coord
+	y-coord
+	z-coord
+	pressure
+	x-velocity
+	y-velocity
+	z-velocity
+	temperature
+Done.
+Solve: cpu=1.984375 real=2.0317607
+"Ok"
+
+
+> (define ps-port)
+ps-port
+
+
+> (set! ps-port (open-file "solve_proc_stats" "wl"))
+ps-port
+
+
+> (set-echo-ports! *console-output-port* (cons ps-port (echo-ports *console-output-port*)))
+(#[port 0x277842c0] #[port 0x267573a0] #[port 0xd648060])
+
+
+> (proc-stats)
+
+------------------------------------------------------------------------------
+       | Virtual Mem Usage (GB)   | Resident Mem Usage(GB)   |              
+ID     | Current      Peak        | Current      Peak        | Page Faults  
+------------------------------------------------------------------------------
+host   | 0.651379     0.685722    | 0.633614     0.662663    | 1.916e+05  
+n0     | 2.31381      2.31613     | 0.213985     0.215984    | 9.628e+04  
+------------------------------------------------------------------------------
+Total  | 2.96519             3.00185           | 2.879e+05  
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+                    | Virtual Mem Usage (GB)    | Resident Mem Usage(GB)    | System Mem (GB)          
+Hostname            | Current      Peak         | Current      Peak         |                          
+------------------------------------------------------------------------------------------------
+DESKTOP-VLOSL63     | 2.96519      3.00185      | 0.847599     0.878647     | 7.43188      
+------------------------------------------------------------------------------------------------
+Total               | 2.96519      3.00185      | 0.847599     0.878647     |           
+------------------------------------------------------------------------------------------------
+()
+
+
+> (set-echo-ports! *console-output-port* (delete ps-port (echo-ports *console-output-port*)))
+(#[port 0x267573a0] #[port 0xd648060])
+
+
+> (flush-output-port ps-port)
+#f
+
+
+> (close-output-port ps-port)
+#f
+
+
+> (err-protect (stop-transcript))
+Transcript Stop Time:  12:42:41, 24 Aug 2025 India Standard Time 
+Total Transcript Time: 0 Minute 15 Second.

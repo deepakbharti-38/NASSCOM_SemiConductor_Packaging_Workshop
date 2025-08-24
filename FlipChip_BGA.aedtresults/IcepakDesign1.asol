@@ -1,0 +1,148 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002025, month=000000000008, day=000000000024, hour=000000000012, min=000000000046, sec=000000000006)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000003133, lin=000000000129, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock3'
+	SimSetupID=25
+	SimSetupName='Setup1'
+	VersionID=0
+	SolveSetupID=0
+	$begin 'Meshes'
+		NextUniqueID=2
+		MoveBackwards=false
+		$begin 'SubData'
+			ID=0
+			Ver=0
+			Meshes(VID=20, Ver=0, Dir='DV20_S25_Meshes0_V0.sd/')
+		$end 'SubData'
+	$end 'Meshes'
+	$begin 'restart'
+		R(VID=20, Ver=0, Dir='DV20_S25_V0.restart/')
+	$end 'restart'
+	R_Ver=0
+	$begin 'MON'
+		NextUniqueID=5
+		MoveBackwards=false
+		$begin 'SubData'
+			ID=0
+			Ver=0
+			MON(VID=20, Ver=0, File='DV20_S25_MON0_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=1
+			Ver=0
+			MON(VID=20, Ver=0, File='DV20_S25_MON1_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			Ver=0
+			MON(VID=20, Ver=0, File='DV20_S25_MON2_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			Ver=0
+			MON(VID=20, Ver=0, File='DV20_S25_MON3_V0.sd')
+		$end 'SubData'
+	$end 'MON'
+	$begin 'SolutionOverview'
+		IDDblMap(39, -1)
+		$begin 'DataMap'
+			VID=20
+			Ver=0
+			SOV(DblID=39, File='DV20_S25_V0_39.SOV')
+		$end 'DataMap'
+	$end 'SolutionOverview'
+	SOV=0
+	$begin 'Profiles'
+		P(VID=20, Ver=0, File='DV20_S25_V0.profile')
+	$end 'Profiles'
+$end 'SolutionBlock3'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=25, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock3'
+	'SolutionKey(SimSetup=25, Instance=\'SolutionDefinition\', Solution=26, VersionID=0)'='SolutionBlock2'
+$end 'BlockMapName'
+$begin 'SolutionBlock2'
+	SolutionName='SteadyState'
+	SolutionID=26
+	V=0
+	$begin 'States'
+		F(VID=20, Ver=0)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies()
+		SolutionType=1
+		CenterFreq=0
+	$end 'Definition'
+	$begin 'Fields'
+		Field(VID=20, Ver=0, Dir='DV20_SOL26_V0.Field/')
+	$end 'Fields'
+	$begin 'MON'
+		NextUniqueID=5
+		MoveBackwards=false
+		$begin 'SubData'
+			ID=0
+			Ver=0
+			MON(VID=20, Ver=0, File='DV20_SOL26_MON0_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=1
+			Ver=0
+			MON(VID=20, Ver=0, File='DV20_SOL26_MON1_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			Ver=0
+			MON(VID=20, Ver=0, File='DV20_SOL26_MON2_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			Ver=0
+			MON(VID=20, Ver=0, File='DV20_SOL26_MON3_V0.sd')
+		$end 'SubData'
+	$end 'MON'
+$end 'SolutionBlock2'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='IcepakDesign1'
+	VersionID=24
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=41
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='', ID=20)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'Meshes'
+		NextUniqueID=16
+		MoveBackwards=false
+		$begin 'SubData'
+			ID=0
+			Ver=14
+			Meshes(VID=20, Ver=14, Dir='DV20_Meshes0_V14.sd/')
+		$end 'SubData'
+	$end 'Meshes'
+	$begin 'Loss'
+		NextUniqueID=11
+		MoveBackwards=false
+	$end 'Loss'
+$end 'SolutionBlock1'
+$begin '$index$'
+	$begin '$index$'
+		BlockMapName(pos=1490, lin=56, lvl=0)
+		SolutionBlock2(pos=1766, lin=61, lvl=0)
+		SolutionBlock3(pos=370, lin=1, lvl=0)
+		SolutionBlock1(pos=2597, lin=102, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=3133, lin=129, lvl=0)
+	$end '$index$'
+$end '$index$'
