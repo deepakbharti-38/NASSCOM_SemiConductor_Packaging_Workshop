@@ -1,0 +1,754 @@
+Transcript Start Time:  10:30:00, 24 Aug 2025 India Standard Time 
+Current Directory: "C:\temp\icepak_DESKTOP-VLOSL63_216.pjt"
+
+Build Time: May 13 2025 10:04:50 EST  Build Id: 200 Revision: dd59eb8b1e  Branch: releases/release-25.2 
+Executable Path: C:/PROGRA~1/ANSYSI~1/ANSYSS~1/v252/AnsysEM/fluent/ntbin/win64/fluent.exe
+
+---------------------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                                      
+---------------------------------------------------------------------------------------------
+n0*   DESKTOP-VLOSL63  1/4  Windows-x64  9276   AMD Ryzen 3 2200G with Radeon Vega Graphics 
+host  DESKTOP-VLOSL63       Windows-x64  16148  AMD Ryzen 3 2200G with Radeon Vega Graphics 
+
+MPI Option Selected: intel
+Selected system interconnect: default
+---------------------------------------------------------------------------------------------
+
+Cortex Process ID: 14564 
+License Server Path: () 
+
+> (define t0)
+t0
+
+
+> (set! t0 (cpu-time))
+t0
+
+
+> (define wt0)
+wt0
+
+
+> (set! wt0 (time))
+wt0
+
+
+> (if (err-protect (%enable-dynamic-mesh-node-ids #t)) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+"Ok"
+
+
+> (if (err-protect (ti-menu-load-string "rc Setup1.cas")) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.cas_err"))))
+rc Setup1.cas
+DESKTOP-VLOSL63 is already loaded (35.9693).                       Process affinity not being set.
+
+Reading "Setup1.cas"...
+
+Buffering for file scan...
+
+Icepak
+
+
+  594877 nodes.
+   53442 mixed cells, zone  1.
+     578 mixed cells, zone  2.
+  120272 mixed cells, zone  3.
+   30084 mixed cells, zone  4.
+    8753 mixed cells, zone  5.
+  263061 mixed cells, zone 11.
+  117488 mixed interior faces, zone 12.
+    1377 mixed interior faces, zone 13.
+  331664 mixed interior faces, zone 14.
+   88416 mixed interior faces, zone 15.
+   20830 mixed interior faces, zone 16.
+  766946 mixed interior faces, zone 22.
+   11456 mixed wall faces, zone 25.
+   11456 mixed wall faces, zone 26.
+   11456 shadow face pairs. 
+    9802 mixed wall faces, zone 27.
+    9802 mixed wall faces, zone 28.
+    9802 shadow face pairs. 
+    1440 mixed wall faces, zone 29.
+    1440 mixed wall faces, zone 30.
+    1440 shadow face pairs. 
+   17576 mixed wall faces, zone 31.
+   17576 mixed wall faces, zone 32.
+   17576 shadow face pairs. 
+    7837 mixed wall faces, zone 33.
+    7837 mixed wall faces, zone 34.
+    7837 shadow face pairs. 
+    2720 mixed wall faces, zone 35.
+    2720 mixed wall faces, zone 36.
+    2720 shadow face pairs. 
+   18496 mixed wall faces, zone 37.
+   18496 mixed wall faces, zone 38.
+   18496 shadow face pairs. 
+    4636 mixed wall faces, zone 39.
+    4636 mixed wall faces, zone 40.
+    4636 shadow face pairs. 
+    3673 mixed wall faces, zone 41.
+    3673 mixed wall faces, zone 42.
+    3673 shadow face pairs. 
+    2176 mixed wall faces, zone 43.
+    2176 mixed wall faces, zone 44.
+    2176 shadow face pairs. 
+    1156 mixed wall faces, zone 45.
+    1156 mixed wall faces, zone 46.
+    1156 shadow face pairs. 
+    1985 mixed wall faces, zone 47.
+    1985 mixed wall faces, zone 48.
+    1985 shadow face pairs. 
+    1024 mixed wall faces, zone 49.
+    1024 mixed wall faces, zone 50.
+    1024 shadow face pairs. 
+    9168 mixed wall faces, zone 51.
+    9168 mixed wall faces, zone 52.
+    9168 shadow face pairs. 
+   35496 mixed wall faces, zone 53.
+     121 mixed interface faces, zone 54.
+     649 mixed interface faces, zone 55.
+      16 mixed interface faces, zone 56.
+      68 mixed interface faces, zone 57.
+   73984 mixed interface faces, zone 60.
+   18496 mixed interface faces, zone 58.
+    1088 mixed interface faces, zone 59.
+     425 mixed interface faces, zone 61.
+     289 mixed interface faces, zone 62.
+
+Building...
+     mesh
+     materials,
+     interface,
+     domains,
+     zones,
+	interf62
+	interf61
+	interf59
+	interf58
+	interf60
+	interf57
+	interf56
+	interf55
+	interf54
+	region_side
+	practical_practice_1_flipchip_bga_ball_1_side_shadow
+	practical_practice_1_flipchip_bga_ball_1_side
+	practical_practice_1_flipchip_bga_die_side_shadow
+	practical_practice_1_flipchip_bga_die_side
+	practical_practice_1_flipchip_bga_via_side_shadow
+	practical_practice_1_flipchip_bga_via_side
+	practical_practice_1_flipchip_bga_substrate_side_shadow
+	practical_practice_1_flipchip_bga_substrate_side
+	practical_practice_1_flipchip_bga_trace4_side_3_shadow
+	practical_practice_1_flipchip_bga_trace4_side_3
+	practical_practice_1_flipchip_bga_trace4_side_2_shadow
+	practical_practice_1_flipchip_bga_trace4_side_2
+	practical_practice_1_flipchip_bga_trace4_side_1_shadow
+	practical_practice_1_flipchip_bga_trace4_side_1
+	practical_practice_1_flipchip_bga_trace4_side_shadow
+	practical_practice_1_flipchip_bga_trace4_side
+	practical_practice_1_flipchip_bga_trace3_side_1_shadow
+	practical_practice_1_flipchip_bga_trace3_side_1
+	practical_practice_1_flipchip_bga_trace3_side_shadow
+	practical_practice_1_flipchip_bga_trace3_side
+	practical_practice_1_flipchip_bga_trace2_side_1_shadow
+	practical_practice_1_flipchip_bga_trace2_side_1
+	practical_practice_1_flipchip_bga_trace2_side_shadow
+	practical_practice_1_flipchip_bga_trace2_side
+	practical_practice_1_flipchip_bga_trace1_side_shadow
+	practical_practice_1_flipchip_bga_trace1_side
+	practical_practice_1_flipchip_bga_die_source_side_shadow
+	practical_practice_1_flipchip_bga_die_source_side
+	practical_practice_1_flipchip_bga_ball_solid
+	practical_practice_1_flipchip_bga_via_solid
+	practical_practice_1_flipchip_bga_substrate_solid
+	practical_practice_1_flipchip_bga_die_underfill_solid
+	practical_practice_1_flipchip_bga_die_solid
+	region_fluid
+	interior-22
+	interior-16
+	interior-15
+	interior-14
+	interior-13
+	interior-12
+     parallel,
+
+Note: 3d, pressure-based, laminar case read into
+      3d, double precision, pressure-based, laminar solver.
+
+
+
+     shell conduction zones,
+
+        creating conduction zones for wall 25
+        creating conduction zones for wall 27
+        creating conduction zones for wall 31
+        creating conduction zones for wall 33
+        creating conduction zones for wall 37
+        creating conduction zones for wall 39
+        creating conduction zones for wall 41
+        creating conduction zones for wall 47
+        creating conduction zones for wall 49
+Shell creation done.
+
+Done.
+"Ok"
+
+
+> (ti-menu-load-string "file hdf-files? no")
+file hdf-files? no#t
+
+
+> (load "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/icepak.scm")
+Loading "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/icepak.scm"
+Done.
+#f
+
+
+> (if (err-protect (ti-menu-load-string "def mesh-interfaces one-to-one-pairing? yes")) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+def mesh-interfaces one-to-one-pairing? yes "Ok"
+
+
+> (if (err-protect (ti-menu-load-string "def mesh-interfaces create all_interfaces yes no")) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+def mesh-interfaces create all_interfaces yes 
+
+Pairing interface zones...
+
+Info: Interface zones, 62 and 61, possibly penetrate each other.
+  This could adversely affect your solution.
+
+Creating one-to-one mesh interfaces...
+Note: Slitting sliding interface zone 80 into a coupled wall with shadow zone 113.
+
+        creating all_interfaces:01:interf56::interf54-shadow
+Note: Slitting sliding interface zone 65 into a coupled wall with shadow zone 114.
+
+        creating all_interfaces:02:interf57::interf55-shadow
+Note: Slitting sliding interface zone 19 into a coupled wall with shadow zone 115.
+
+        creating all_interfaces:03:interf61::interf58-shadow
+Note: Slitting sliding interface zone 18 into a coupled wall with shadow zone 116.
+
+        creating all_interfaces:04:interf61::interf59-shadow
+Note: Slitting sliding interface zone 8 into a coupled wall with shadow zone 117.
+
+        creating all_interfaces:05:interf62::interf60-shadow
+Info: Interface zones, 62 and 61, possibly penetrate each other.
+  This could adversely affect your solution.
+
+Done.
+
+List of Mesh Interface Area Percentage
+
+                                 Name                                    ID             Area            Area Percentage   
+   ----------------------------------------------------------------  ----------  ------------------  ---------------------
+                               all_interfaces:02:interf57::interf55          65      1.08257637e-06       100.00% /100.00%
+                               all_interfaces:01:interf56::interf54          80      1.96349512e-07       100.00% /100.00%
+                               all_interfaces:06:interf62::interf61           7      7.32736000e-05       100.00% / 99.53%
+                               all_interfaces:05:interf62::interf60           8      3.66301256e-05        49.99% /100.00%
+                               all_interfaces:03:interf61::interf58          19      3.66301256e-05        49.76% /100.00%
+                               all_interfaces:04:interf61::interf59          18      3.42400000e-07         0.47% /100.00%
+ no"Ok"
+
+
+> (icepak-reset-interface-to-wall)
+#f
+
+
+> (begin (define g_c (car (%grid-check))) (if g_c (begin (define port (open-output-file "GRID_FAIL")) (exit))))
+
+ Domain Extents:
+   x-coordinate: min (m) = -7.500000e-03, max (m) = 2.250000e-02
+   y-coordinate: min (m) = -7.500000e-03, max (m) = 2.250000e-02
+   z-coordinate: min (m) = -7.500000e-04, max (m) = 2.250000e-03
+ Volume statistics:
+   minimum volume (m3): 1.850711e-15
+   maximum volume (m3): 6.627840e-11
+     total volume (m3): 2.700000e-06
+ Face area statistics:
+   minimum face area (m2): 1.779452e-10
+   maximum face area (m2): 2.540160e-07
+ Checking mesh............
+WARNING: 1626 pair(s) of adjacent faces with different orientation on zone 40.
+WARNING: 1626 pair(s) of adjacent faces with different orientation on zone 39.
+WARNING: 2485 pair(s) of adjacent faces with different orientation on zone 28.
+WARNING: 2485 pair(s) of adjacent faces with different orientation on zone 27..................
+ Done.
+#f
+
+
+> (load "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/benchmark.scm")
+Loading "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/benchmark.scm"
+Done.
+#f
+
+
+> (if (err-protect (ti-menu-load-string "def mo rad s2s? no")) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+def mo rad s2s? no"Ok"
+
+
+> (if (err-protect (ti-menu-load-string "s i i")) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.init_err"))))
+s i i
+Info: Interface zones, 62 and 61, possibly penetrate each other.
+  This could adversely affect your solution.
+"Ok"
+
+
+> (load "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/set-si-bc.scm")
+Loading "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/set-si-bc.scm"
+Done.
+#f
+
+
+> (if (err-protect (init-si-zones)) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+
+Info: Interface zones, 62 and 61, possibly penetrate each other.
+  This could adversely affect your solution.
+
+Info: Interface zones, 62 and 61, possibly penetrate each other.
+  This could adversely affect your solution.
+"Ok"
+
+
+> (if (err-protect (set-si-bc 'all_interfaces 'interf54 'wall '((d (constant . 3.3e-05)) (planar-conduction? . #t) (q-dot (constant . 0.000000)) (material . _5708_steel_oxidised_surface)) '((d (constant . 3.3e-05)) (planar-conduction? . #t) (q-dot (constant . 0.000000)) (material . _5708_steel_oxidised_surface)))) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+using auto pairing mode
+interf54: found int-ids (80) in all_interfaces:01:interf56::interf54
+found interface thread 80 for interf54
+ set d to ((constant . 3.3e-05))
+ set planar-conduction? to #t
+ set q-dot to ((constant . 0))
+ set material to _5708_steel_oxidised_surface
+ set d to ((constant . 3.3e-05))
+ set planar-conduction? to #t
+ set q-dot to ((constant . 0))
+ set material to _5708_steel_oxidised_surface
+"Ok"
+
+
+> (if (err-protect (set-si-bc 'all_interfaces 'interf56 'wall '((d (constant . 3.3e-05)) (planar-conduction? . #t) (q-dot (constant . 0.000000)) (material . _5708_steel_oxidised_surface)) '((d (constant . 3.3e-05)) (planar-conduction? . #t) (q-dot (constant . 0.000000)) (material . _5708_steel_oxidised_surface)))) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+using auto pairing mode
+interf56: found int-ids (80) in all_interfaces:01:interf56::interf54
+found interface thread 80 for interf56
+ set d to ((constant . 3.3e-05))
+ set planar-conduction? to #t
+ set q-dot to ((constant . 0))
+ set material to _5708_steel_oxidised_surface
+ set d to ((constant . 3.3e-05))
+ set planar-conduction? to #t
+ set q-dot to ((constant . 0))
+ set material to _5708_steel_oxidised_surface
+"Ok"
+
+
+> (if (err-protect (set-si-bc 'all_interfaces 'interf60  'wall '((d (constant . 3.3e-05)) (planar-conduction? . #t) (q-dot (constant . 0.000000)) (thermal-bc . 3) (int-rad? . #f) (roughness-height . ((constant . 0.000000))) (material . practical_practice_1_flipchip_bga1_steel_oxidised_surface)) '((d (constant . 3.3e-05)) (planar-conduction? . #t) (q-dot (constant . 0.000000)) (thermal-bc . 3) (int-rad? . #f) (roughness-height . ((constant . 0.000000))) (material . practical_practice_1_flipchip_bga1_steel_oxidised_surface)))) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+using auto pairing mode
+interf60: found int-ids (8) in all_interfaces:05:interf62::interf60
+found interface thread 8 for interf60
+ set d to ((constant . 3.3e-05))
+ set planar-conduction? to #t
+ set q-dot to ((constant . 0))
+ set thermal-bc to 3
+ set int-rad? to #f
+ set roughness-height to ((constant . 0))
+ set material to practical_practice_1_flipchip_bga1_steel_oxidised_surface
+ set d to ((constant . 3.3e-05))
+ set planar-conduction? to #t
+ set q-dot to ((constant . 0))
+ set thermal-bc to 3
+ set int-rad? to #f
+ set roughness-height to ((constant . 0))
+ set material to practical_practice_1_flipchip_bga1_steel_oxidised_surface
+"Ok"
+
+
+> (if (err-protect (set-si-bc 'all_interfaces 'interf62  'wall '((d (constant . 3.3e-05)) (planar-conduction? . #t) (q-dot (constant . 0.000000)) (thermal-bc . 3) (int-rad? . #f) (roughness-height . ((constant . 0.000000))) (material . practical_practice_1_flipchip_bga1_steel_oxidised_surface)) '((d (constant . 3.3e-05)) (planar-conduction? . #t) (q-dot (constant . 0.000000)) (thermal-bc . 3) (int-rad? . #f) (roughness-height . ((constant . 0.000000))) (material . practical_practice_1_flipchip_bga1_steel_oxidised_surface)))) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+using auto pairing mode
+interf62: found int-ids (7) in all_interfaces:06:interf62::interf61
+found interface thread 7 for interf62
+
+Note: Slitting sliding interface zone 7 into a coupled wall with shadow zone 118.
+
+        creating all_interfaces:06:interf62::interf61-shadowsetting all_interfaces:06:interf62::interf61 to type wall
+ set d to ((constant . 3.3e-05))
+ set planar-conduction? to #t
+ set q-dot to ((constant . 0))
+ set thermal-bc to 3
+ set int-rad? to #f
+ set roughness-height to ((constant . 0))
+ set material to practical_practice_1_flipchip_bga1_steel_oxidised_surface
+ set d to ((constant . 3.3e-05))
+ set planar-conduction? to #t
+ set q-dot to ((constant . 0))
+ set thermal-bc to 3
+ set int-rad? to #f
+ set roughness-height to ((constant . 0))
+ set material to practical_practice_1_flipchip_bga1_steel_oxidised_surface
+interf62: found int-ids (8) in all_interfaces:05:interf62::interf60
+found interface thread 8 for interf62
+ set d to ((constant . 3.3e-05))
+ set planar-conduction? to #t
+ set q-dot to ((constant . 0))
+ set thermal-bc to 3
+ set int-rad? to #f
+ set roughness-height to ((constant . 0))
+ set material to practical_practice_1_flipchip_bga1_steel_oxidised_surface
+ set d to ((constant . 3.3e-05))
+ set planar-conduction? to #t
+ set q-dot to ((constant . 0))
+ set thermal-bc to 3
+ set int-rad? to #f
+ set roughness-height to ((constant . 0))
+ set material to practical_practice_1_flipchip_bga1_steel_oxidised_surface
+"Ok"
+
+
+> (set! suffix-expand-filename (lambda (fn suffix) fn))
+suffix-expand-filename
+
+
+> (if (err-protect (%set-void-dynamic-mesh-node-ids)) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+"Ok"
+
+
+> wc Setup1.nc_cas
+
+Writing "Setup1.nc_cas"...
+
+   53442 mixed cells, zone  1, binary.
+     578 hexahedral cells, zone  2, binary.
+  120272 mixed cells, zone  3, binary.
+   30084 mixed cells, zone  4, binary.
+    8753 mixed cells, zone  5, binary.
+  263061 mixed cells, zone 11, binary.
+     196 mixed wall faces, zone 80, binary.
+     196 mixed wall faces, zone 113, binary.
+     816 mixed wall faces, zone 65, binary.
+     816 mixed wall faces, zone 114, binary.
+   23104 mixed wall faces, zone 19, binary.
+   23104 mixed wall faces, zone 115, binary.
+    2304 mixed wall faces, zone 18, binary.
+    2304 mixed wall faces, zone 116, binary.
+   82944 mixed wall faces, zone  8, binary.
+   82944 mixed wall faces, zone 117, binary.
+     289 mixed wall faces, zone  7, binary.
+     289 mixed wall faces, zone 118, binary.
+  117488 mixed interior faces, zone 12, binary.
+    1377 quadrilateral interior faces, zone 13, binary.
+  331664 mixed interior faces, zone 14, binary.
+   88416 mixed interior faces, zone 15, binary.
+   20830 mixed interior faces, zone 16, binary.
+  766946 mixed interior faces, zone 22, binary.
+   11456 mixed wall faces, zone 25, binary.
+   11456 mixed wall faces, zone 26, binary.
+    9802 mixed wall faces, zone 27, binary.
+    9802 mixed wall faces, zone 28, binary.
+    1440 quadrilateral wall faces, zone 29, binary.
+    1440 quadrilateral wall faces, zone 30, binary.
+   17576 mixed wall faces, zone 31, binary.
+   17576 mixed wall faces, zone 32, binary.
+    7837 mixed wall faces, zone 33, binary.
+    7837 mixed wall faces, zone 34, binary.
+    2720 mixed wall faces, zone 35, binary.
+    2720 mixed wall faces, zone 36, binary.
+   18496 quadrilateral wall faces, zone 37, binary.
+   18496 quadrilateral wall faces, zone 38, binary.
+    4636 mixed wall faces, zone 39, binary.
+    4636 mixed wall faces, zone 40, binary.
+    3673 mixed wall faces, zone 41, binary.
+    3673 mixed wall faces, zone 42, binary.
+    2176 mixed wall faces, zone 43, binary.
+    2176 mixed wall faces, zone 44, binary.
+    1156 quadrilateral wall faces, zone 45, binary.
+    1156 quadrilateral wall faces, zone 46, binary.
+    1985 mixed wall faces, zone 47, binary.
+    1985 mixed wall faces, zone 48, binary.
+    1024 mixed wall faces, zone 49, binary.
+    1024 mixed wall faces, zone 50, binary.
+    9168 mixed wall faces, zone 51, binary.
+    9168 mixed wall faces, zone 52, binary.
+   35496 mixed wall faces, zone 53, binary.
+     121 quadrilateral interface faces, zone 54, binary.
+     649 quadrilateral interface faces, zone 55, binary.
+      16 quadrilateral interface faces, zone 56, binary.
+      68 mixed interface faces, zone 57, binary.
+   73984 quadrilateral interface faces, zone 60, binary.
+   18496 mixed interface faces, zone 58, binary.
+    1088 quadrilateral interface faces, zone 59, binary.
+     425 quadrilateral interface faces, zone 61, binary.
+     289 quadrilateral interface faces, zone 62, binary.
+     196 wall parent pointers, zone 80, binary.
+     196 wall parent pointers, zone 113, binary.
+     816 wall parent pointers, zone 65, binary.
+     816 wall parent pointers, zone 114, binary.
+   23104 wall parent pointers, zone 19, binary.
+   23104 wall parent pointers, zone 115, binary.
+    2304 wall parent pointers, zone 18, binary.
+    2304 wall parent pointers, zone 116, binary.
+   82944 wall parent pointers, zone  8, binary.
+   82944 wall parent pointers, zone 117, binary.
+     289 wall parent pointers, zone  7, binary.
+     289 wall parent pointers, zone 118, binary.
+     196 interface metric data, zone 80, binary.
+     196 interface metric data, zone 113, binary.
+     816 interface metric data, zone 65, binary.
+     816 interface metric data, zone 114, binary.
+   23104 interface metric data, zone 19, binary.
+   23104 interface metric data, zone 115, binary.
+    2304 interface metric data, zone 18, binary.
+    2304 interface metric data, zone 116, binary.
+   82944 interface metric data, zone  8, binary.
+   82944 interface metric data, zone 117, binary.
+     289 interface metric data, zone  7, binary.
+     289 interface metric data, zone 118, binary.
+     196 shadow face pairs, binary.
+     816 shadow face pairs, binary.
+   23104 shadow face pairs, binary.
+    2304 shadow face pairs, binary.
+   82944 shadow face pairs, binary.
+     289 shadow face pairs, binary.
+   11456 shadow face pairs, binary.
+    9802 shadow face pairs, binary.
+    1440 shadow face pairs, binary.
+   17576 shadow face pairs, binary.
+    7837 shadow face pairs, binary.
+    2720 shadow face pairs, binary.
+   18496 shadow face pairs, binary.
+    4636 shadow face pairs, binary.
+    3673 shadow face pairs, binary.
+    2176 shadow face pairs, binary.
+    1156 shadow face pairs, binary.
+    1985 shadow face pairs, binary.
+    1024 shadow face pairs, binary.
+    9168 shadow face pairs, binary.
+  594877 nodes, binary.
+  594877 node flags, binary.
+  594877 node sids, binary.
+Done.
+
+
+> (ti-menu-load-string "file hdf-files? yes")
+file hdf-files? yesFast-loading "C:\PROGRA~1\ANSYSI~1\ANSYSS~1\v252\AnsysEM\fluent\fluent25.2.0\\addons\afd\lib\hdfio.bin"
+Done.
+#t
+
+
+> (if (err-protect (%write-nodemap "Setup1.nodemap")) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.uns_err"))))
+999999: Wrote nodemap for 594877 nodes
+0: Using dynamic mesh id
+"Ok"
+
+
+> (load "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/monitor-create.scm")
+Loading "C:\Program Files\ANSYS Inc\ANSYS Student\v252\AnsysEM/icepak/lib/icepak/monitor-create.scm"
+Done.
+#f
+
+
+> (read-monitors "Setup1.pmon" "Setup1")
+(monitor-1 (unsteady? . #f) (avg-over . 1) (write? . #t) (print? . #f) (plot? . #f) (freq . 1) (unit) (file . "Setup1.1.Practical_Project1_Flipchip_BGA_substrate.out") (surfaces 1) (sub-function . "Static Temperature") (domain . "mixture") (function . "Temperature...") (x-axis . "Iteration") (window . -1) (report . "Vertex Average"))
+(monitor-2 (unsteady? . #f) (avg-over . 1) (write? . #t) (print? . #f) (plot? . #f) (freq . 1) (unit) (file . "Setup1.2.Practical_Project1_Flipchip_BGA_die.out") (surfaces 2) (sub-function . "Static Temperature") (domain . "mixture") (function . "Temperature...") (x-axis . "Iteration") (window . -2) (report . "Vertex Average"))
+(monitor-3 (unsteady? . #f) (avg-over . 1) (write? . #t) (print? . #f) (plot? . #f) (freq . 1) (unit) (file . "Setup1.3.Practical_Project1_Flipchip_BGA_die_underfill.out") (surfaces 3) (sub-function . "Static Temperature") (domain . "mixture") (function . "Temperature...") (x-axis . "Iteration") (window . -3) (report . "Vertex Average"))
+
+
+> (retain-monitor-usage #f)
+Information: Converting monitor monitor-3 to report definition.
+Information: Converting monitor monitor-2 to report definition.
+Information: Converting monitor monitor-1 to report definition.
+*monset->plot-set-window-no-graphics*
+
+
+> (define ps-port)
+ps-port
+
+
+> (set! ps-port (open-file "init_proc_stats" "wl"))
+ps-port
+
+
+> (set-echo-ports! *console-output-port* (cons ps-port (echo-ports *console-output-port*)))
+(#[port 0x28c97900] #[port 0x267bca40] #[port 0xd6a0060])
+
+
+> (proc-stats)
+
+------------------------------------------------------------------------------
+       | Virtual Mem Usage (GB)   | Resident Mem Usage(GB)   |              
+ID     | Current      Peak        | Current      Peak        | Page Faults  
+------------------------------------------------------------------------------
+host   | 0.688313     0.936768    | 0.553741     0.818748    | 2.773e+05  
+n0     | 3.41142      3.49108     | 1.20631      1.28612     | 1.206e+06  
+------------------------------------------------------------------------------
+Total  | 4.09973             4.42785           | 1.484e+06  
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+                    | Virtual Mem Usage (GB)    | Resident Mem Usage(GB)    | System Mem (GB)          
+Hostname            | Current      Peak         | Current      Peak         |                          
+------------------------------------------------------------------------------------------------
+DESKTOP-VLOSL63     | 4.09973      4.42785      | 1.76009      2.10487      | 7.43188      
+------------------------------------------------------------------------------------------------
+Total               | 4.09973      4.42785      | 1.76009      2.10487      |           
+------------------------------------------------------------------------------------------------
+()
+
+
+> (set-echo-ports! *console-output-port* (delete ps-port (echo-ports *console-output-port*)))
+(#[port 0x267bca40] #[port 0xd6a0060])
+
+
+> (flush-output-port ps-port)
+#f
+
+
+> (close-output-port ps-port)
+#f
+
+
+> (if (err-protect (load "Setup1.sovcommands.scm") #t) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.soln_err"))))
+Loading ".\.\Setup1.sovcommands.scm"
+Done.
+"Ok"
+
+
+> (define t1)
+t1
+
+
+> (set! t1 (cpu-time))
+t1
+
+
+> (define wt1)
+wt1
+
+
+> (set! wt1 (time))
+wt1
+
+
+> (format "Solver Initialization: cpu=~a real=~a~%" (- t1 t0) (- wt1 wt0))
+Solver Initialization: cpu=99.794632 real=99.795293
+
+
+> (if (err-protect (benchmark-aedt '(icepak-iterate 100 "Setup1" "Setup1.res" 100 1 1))) (pp "Ok") (begin (close-output-port (open-output-file "Setup1.uns_out")) (close-output-port (open-output-file "Setup1.soln_err"))))
+
+  iter  continuity  x-velocity  y-velocity  z-velocity      energy     time/iter
+
+Shell conduction is not allowed on interface wall zones.
+ Turning off shell conduction for wall 80
+
+Shell conduction is not allowed on interface wall zones.
+ Turning off shell conduction for wall 8
+
+Shell conduction is not allowed on interface wall zones.
+ Turning off shell conduction for wall 7
+
+Shell creation done.
+     1  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  7.1133e-07  0:27:45   99
+     2  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  2.0039e-07  0:24:55   98
+     3  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  1.1111e-07  0:22:22   97
+     4  0.0000e+00  0.0000e+00  0.0000e+00  0.0000e+00  7.6240e-08  0:20:05   96
+
+Writing "Setup1.resd"...
+
+Writing elements...
+Wrote 5648 triangles.
+Wrote 322198 quads.
+Writing face results...
+Wrote Heat Flow Rate on 327846 faces. 
+Wrote Heat Flux on 327846 faces. 
+Wrote Temperature on 327846 faces. 
+Wrote Mass Flux on 327846 faces. 
+Wrote X Velocity on 327846 faces. 
+Wrote Y Velocity on 327846 faces. 
+Wrote Z Velocity on 327846 faces. 
+Wrote Pressure on 327846 faces. 
+
+Writing node results...
+Writing ICEM domain scalar "Pressure"
+Wrote Pressure on 594877 nodes.
+Writing ICEM domain scalar "Temperature"
+Wrote Temperature on 594877 nodes.
+Writing ICEM domain scalar "X Velocity"
+Wrote X Velocity on 594877 nodes.
+Writing ICEM domain scalar "Y Velocity"
+Wrote Y Velocity on 594877 nodes.
+Writing ICEM domain scalar "Z Velocity"
+Wrote Z Velocity on 594877 nodes.
+0: Using dynamic mesh id
+Done.
+
+surface reset-zone-surfaces"Ok"
+Writing Setup1.sov... 
+report s-i vertex-max Available surfaces: (interf54-non-overlapping interf55-non-overlapping interf56-non-overlapping interf57-non-overlapping interf58-non-overlapping interf59-non-overlapping interf60-non-overlapping interf61-non-overlapping interf62-non-overlapping all_interfaces:01:interf56::interf54 all_interfaces:01:interf56::interf54-shadow all_interfaces:02:interf57::interf55 all_interfaces:02:interf57::interf55-shadow all_interfaces:03:interf61::interf58 all_interfaces:03:interf61::interf58-shadow all_interfaces:04:interf61::interf59 all_interfaces:04:interf61::interf59-shadow all_interfaces:05:interf62::interf60 all_interfaces:05:interf62::interf60-shadow all_interfaces:06:interf62::interf61 all_interfaces:06:interf62::interf61-shadow practical_practice_1_flipchip_bga_trace2_side practical_practice_1_flipchip_bga_trace2_side_shadow practical_practice_1_flipchip_bga_trace3_side practical_practice_1_flipchip_bga_trace3_side_shadow practical_practice_1_flipchip_bga_substrate_side practical_practice_1_flipchip_bga_substrate_side_shadow practical_practice_1_flipchip_bga_trace1_side practical_practice_1_flipchip_bga_trace1_side_shadow practical_practice_1_flipchip_bga_trace4_side_2 practical_practice_1_flipchip_bga_trace4_side_2_shadow practical_practice_1_flipchip_bga_via_side practical_practice_1_flipchip_bga_via_side_shadow practical_practice_1_flipchip_bga_trace2_side_1 practical_practice_1_flipchip_bga_trace2_side_1_shadow practical_practice_1_flipchip_bga_trace3_side_1 practical_practice_1_flipchip_bga_trace3_side_1_shadow practical_practice_1_flipchip_bga_trace4_side practical_practice_1_flipchip_bga_trace4_side_shadow practical_practice_1_flipchip_bga_die_side practical_practice_1_flipchip_bga_die_side_shadow practical_practice_1_flipchip_bga_die_source_side practical_practice_1_flipchip_bga_die_source_side_shadow practical_practice_1_flipchip_bga_trace4_side_3 practical_practice_1_flipchip_bga_trace4_side_3_shadow practical_practice_1_flipchip_bga_trace4_side_1 practical_practice_1_flipchip_bga_trace4_side_1_shadow practical_practice_1_flipchip_bga_ball_1_side practical_practice_1_flipchip_bga_ball_1_side_shadow region_side interf54 interf55 interf56 interf57 interf60 interf58 interf59 interf61 interf62 p3 p2 p1)
+(practical_practice_1_flipchip_bga_die_source_side interf60 interf62 practical_practice_1_flipchip_bga_trace1_side practical_practice_1_flipchip_bga_trace2_side practical_practice_1_flipchip_bga_trace2_side_1 practical_practice_1_flipchip_bga_trace3_side practical_practice_1_flipchip_bga_trace3_side_1 practical_practice_1_flipchip_bga_trace4_side practical_practice_1_flipchip_bga_trace4_side_1 practical_practice_1_flipchip_bga_trace4_side_2 practical_practice_1_flipchip_bga_trace4_side_3 ) temperature yes Setup1.sov"Ok"
+report fluxes heat-transfer no (practical_practice_1_flipchip_bga_die_source_side_shadow practical_practice_1_flipchip_bga_die_source_side practical_practice_1_flipchip_bga_trace1_side_shadow interf60 interf62 practical_practice_1_flipchip_bga_trace1_side practical_practice_1_flipchip_bga_trace2_side_shadow practical_practice_1_flipchip_bga_trace2_side_1_shadow practical_practice_1_flipchip_bga_trace2_side practical_practice_1_flipchip_bga_trace2_side_1 practical_practice_1_flipchip_bga_trace3_side_shadow practical_practice_1_flipchip_bga_trace3_side_1_shadow practical_practice_1_flipchip_bga_trace3_side practical_practice_1_flipchip_bga_trace3_side_1 practical_practice_1_flipchip_bga_trace4_side_shadow practical_practice_1_flipchip_bga_trace4_side_1_shadow practical_practice_1_flipchip_bga_trace4_side_2_shadow practical_practice_1_flipchip_bga_trace4_side_3_shadow practical_practice_1_flipchip_bga_trace4_side practical_practice_1_flipchip_bga_trace4_side_1 practical_practice_1_flipchip_bga_trace4_side_2 practical_practice_1_flipchip_bga_trace4_side_3 ) yes Setup1.sov"Ok"
+report fluxes heat-transfer no (  all_interfaces:05:interf62::interf60  all_interfaces:05:interf62::interf60-shadow  all_interfaces:06:interf62::interf61  all_interfaces:06:interf62::interf61-shadow) yes Setup1.sov"Ok"
+Completed Writing Setup1.sov... 
+
+Writing to DESKTOP-VLOSL63:"C:\temp\icepak_DESKTOP-VLOSL63_216.pjt\Setup1.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+Writing data to Setup1.dat ...
+	x-coord
+	y-coord
+	z-coord
+	pressure
+	x-velocity
+	y-velocity
+	z-velocity
+	temperature
+Done.
+Solve: cpu=48.265625 real=50.984863
+"Ok"
+
+
+> (define ps-port)
+ps-port
+
+
+> (set! ps-port (open-file "solve_proc_stats" "wl"))
+ps-port
+
+
+> (set-echo-ports! *console-output-port* (cons ps-port (echo-ports *console-output-port*)))
+(#[port 0x1c5116e0] #[port 0x267bca40] #[port 0xd6a0060])
+
+
+> (proc-stats)
+
+------------------------------------------------------------------------------
+       | Virtual Mem Usage (GB)   | Resident Mem Usage(GB)   |              
+ID     | Current      Peak        | Current      Peak        | Page Faults  
+------------------------------------------------------------------------------
+host   | 0.689331     0.936768    | 0.180874     0.818748    | 2.835e+05  
+n0     | 3.87688      4.02675     | 1.63425      1.75824     | 1.999e+06  
+------------------------------------------------------------------------------
+Total  | 4.56621             4.96352           | 2.283e+06  
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+                    | Virtual Mem Usage (GB)    | Resident Mem Usage(GB)    | System Mem (GB)          
+Hostname            | Current      Peak         | Current      Peak         |                          
+------------------------------------------------------------------------------------------------
+DESKTOP-VLOSL63     | 4.56621      4.96352      | 1.81514      2.57698      | 7.43188      
+------------------------------------------------------------------------------------------------
+Total               | 4.56621      4.96352      | 1.81514      2.57698      |           
+------------------------------------------------------------------------------------------------
+()
+
+
+> (set-echo-ports! *console-output-port* (delete ps-port (echo-ports *console-output-port*)))
+(#[port 0x267bca40] #[port 0xd6a0060])
+
+
+> (flush-output-port ps-port)
+#f
+
+
+> (close-output-port ps-port)
+#f
+
+
+> (err-protect (stop-transcript))
+Transcript Stop Time:  10:32:31, 24 Aug 2025 India Standard Time 
+Total Transcript Time: 2 Minute 30 Second.

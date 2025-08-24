@@ -1,0 +1,108 @@
+$begin 'MeshRegion'
+	Name='MeshRegion1'
+	ParentRegion=6
+	Designid=17240
+	Shapeid=0
+	Domainid=0
+	Root=false
+	HasMesh=true
+	MeshRegion=true
+	$begin 'Transform'
+		AffineMatrix[9: 1, 0, 0, 0, 1, 0, 0, 0, 1]
+		Translation[3: 0, 0, 0]
+	$end 'Transform'
+	$begin 'Objects'
+		Count=3
+		$begin 'Object1'
+			Name='Practical_Project1_Flipchip_BGA_ball'
+			Domains[21: 11707, 7, 0, 11711, 7, 1, 11713, 7, 2, 11710, 7, 3, 11712, 7, 4, 11709, 7, 5, 11708, 7, 6]
+		$end 'Object1'
+		$begin 'Object2'
+			Name='Practical_Practice_1_FlipChip_BGA_ball'
+			Domains[21: 6072, 8, 0, 6076, 8, 1, 6078, 8, 2, 6075, 8, 3, 6077, 8, 4, 6074, 8, 5, 6073, 8, 6]
+		$end 'Object2'
+		$begin 'Object3'
+			Name='Practical_Practice_1_FlipChip_BGA_trace4 - Face 6063'
+			Domains[3: 6063, 9, 1]
+		$end 'Object3'
+	$end 'Objects'
+	$begin 'coupling_walls'
+		Domains[18: 17244, 1, 1, 17246, 2, 1, 17243, 3, 1, 17245, 4, 1, 17242, 5, 1, 17241, 6, 1]
+	$end 'coupling_walls'
+	$begin '2DFaceMapping'
+		Count=1
+		$begin 'FaceMap1'
+			Object=6062
+			Faces[1: 6063]
+		$end 'FaceMap1'
+	$end '2DFaceMapping'
+	$begin '3DFaceMapping'
+		Count=4
+		$begin 'FaceMap1'
+			Object=6062
+			Faces[1: 6063]
+		$end 'FaceMap1'
+		$begin 'FaceMap2'
+			Object=6072
+			Faces[6: 6073, 6075, 6076, 6077, 6074, 6078]
+		$end 'FaceMap2'
+		$begin 'FaceMap3'
+			Object=11707
+			Faces[6: 11708, 11710, 11711, 11712, 11709, 11713]
+		$end 'FaceMap3'
+		$begin 'FaceMap4'
+			Object=17240
+			Faces[6: 17241, 17243, 17244, 17245, 17242, 17246]
+		$end 'FaceMap4'
+	$end '3DFaceMapping'
+	$begin 'BcToEntityMapping'
+		Count=7
+		$begin 'BcMap1'
+			Bc='Practical_Practice_1_FlipChip_BGA1_Practical_Practice_1_FlipChip_BGA_die_source'
+			Objects[1: 5941]
+		$end 'BcMap1'
+		$begin 'BcMap2'
+			Bc='Practical_Practice_1_FlipChip_BGA1_Practical_Practice_1_FlipChip_BGA_trace1'
+			Objects[1: 6032]
+		$end 'BcMap2'
+		$begin 'BcMap3'
+			Bc='Practical_Practice_1_FlipChip_BGA1_Practical_Practice_1_FlipChip_BGA_trace2'
+			Objects[1: 6042]
+		$end 'BcMap3'
+		$begin 'BcMap4'
+			Bc='Practical_Practice_1_FlipChip_BGA1_Practical_Practice_1_FlipChip_BGA_trace3'
+			Objects[1: 6052]
+		$end 'BcMap4'
+		$begin 'BcMap5'
+			Bc='Practical_Practice_1_FlipChip_BGA1_Practical_Practice_1_FlipChip_BGA_trace4'
+			Objects[1: 6062]
+		$end 'BcMap5'
+		$begin 'BcMap6'
+			Bc='Practical_Project1_Flipchip_BGA_die_source'
+			Objects[1: 11599]
+		$end 'BcMap6'
+		$begin 'BcMap7'
+			Bc='Source1'
+			Objects[1: 11639]
+		$end 'BcMap7'
+	$end 'BcToEntityMapping'
+	$begin 'MaterialMapping'
+		Count=2
+		$begin 'MatMap1'
+			MaterialType='Solid'
+			Objects[402: 11639, 11571, 11667, 11611, 11707, 11736, 11764, 11792, 11820, 11848, 11876, 11904, 11932, 11960, 11988, 12016, 12044, 12072, 12101, 12129, 12157, 12185, 12213, 12241, 12269, 12297, 12325, 12353, 12381, 12409, 12437, 12466, 12494, 12522, 12550, 12578, 12606, 12634, 12662, 12690, 12718, 12746, 12774, 12802, 12831, 12859, 12887, 12915, 12943, 12971, 12999, 13027, 13055, 13083, 13111, 13139, 13167, 13196, 13224, 13252, 13280, 13308, 13336, 13364, 13392, 13420, 13448, 13476, 13504, 13532, 13561, 13589, 13617, 13645, 13673, 13701, 13729, 13757, 13785, 13813, 13841, 13869, 13897, 13926, 13954, 13982, 14010, 14038, 14066, 14094, 14122, 14150, 14178, 14206, 14234, 14262, 14291, 14319, 14347, 14375, 14403, 14431, 14459, 14487, 14515, 14543, 14571, 14599, 14627, 14656, 14684, 14712, 14740, 14768, 14796, 14824, 14852, 14880, 14908, 14936, 14964, 14992, 15021, 15049, 15077, 15105, 15133, 15161, 15189, 15217, 15245, 15273, 15301, 15329, 15357, 15386, 15414, 15442, 15470, 15498, 15526, 15554, 15582, 15610, 15638, 15666, 15694, 15722, 15751, 15779, 15807, 15835, 15863, 15891, 15919, 15947, 15975, 16003, 16031, 16059, 16087, 16116, 16144, 16172, 16200, 16228, 16256, 16284, 16312, 16340, 16368, 16396, 16424, 16452, 16481, 16509, 16537, 16565, 16593, 16621, 16649, 16677, 16705, 16733, 16761, 16789, 16817, 16846, 16874, 16902, 16930, 16958, 16986, 17014, 17042, 17070, 17098, 17126, 17154, 17182, 5978, 5914, 6005, 5951, 6072, 6099, 6126, 6153, 6180, 6207, 6234, 6261, 6288, 6315, 6342, 6369, 6396, 6423, 6450, 6477, 6504, 6531, 6558, 6585, 6612, 6639, 6666, 6693, 6720, 6747, 6774, 6801, 6828, 6855, 6882, 6909, 6936, 6963, 6990, 7017, 7044, 7071, 7098, 7125, 7152, 7179, 7206, 7233, 7260, 7287, 7314, 7341, 7368, 7395, 7422, 7449, 7476, 7503, 7530, 7557, 7584, 7611, 7638, 7665, 7692, 7719, 7746, 7773, 7800, 7827, 7854, 7881, 7908, 7935, 7962, 7989, 8016, 8043, 8070, 8097, 8124, 8151, 8178, 8205, 8232, 8259, 8286, 8313, 8340, 8367, 8394, 8421, 8448, 8475, 8502, 8529, 8556, 8583, 8610, 8637, 8664, 8691, 8718, 8745, 8772, 8799, 8826, 8853, 8880, 8907, 8934, 8961, 8988, 9015, 9042, 9069, 9096, 9123, 9150, 9177, 9204, 9231, 9258, 9285, 9312, 9339, 9366, 9393, 9420, 9447, 9474, 9501, 9528, 9555, 9582, 9609, 9636, 9663, 9690, 9717, 9744, 9771, 9798, 9825, 9852, 9879, 9906, 9933, 9960, 9987, 10014, 10041, 10068, 10095, 10122, 10149, 10176, 10203, 10230, 10257, 10284, 10311, 10338, 10365, 10392, 10419, 10446, 10473, 10500, 10527, 10554, 10581, 10608, 10635, 10662, 10689, 10716, 10743, 10770, 10797, 10824, 10851, 10878, 10905, 10932, 10959, 10986, 11013, 11040, 11067, 11094, 11121, 11148, 11175, 11202, 11229, 11256, 11283, 11310, 11337, 11707, 6072]
+		$end 'MatMap1'
+		$begin 'MatMap2'
+			MaterialType='Fluid'
+			Objects[2: 6, 17240]
+		$end 'MatMap2'
+	$end 'MaterialMapping'
+	$begin 'SubRegions'
+	$end 'SubRegions'
+	PartNames(6062, 'Practical_Practice_1_FlipChip_BGA_trace4', 6072, 'Practical_Practice_1_FlipChip_BGA_ball', 11707, 'Practical_Project1_Flipchip_BGA_ball')
+	OverlappingMRFaces[0:]
+	BcTypeMapping(Count=7, 'Practical_Practice_1_FlipChip_BGA1_Practical_Practice_1_FlipChip_BGA_die_source', 'Source', 'Practical_Practice_1_FlipChip_BGA1_Practical_Practice_1_FlipChip_BGA_trace1', 'Conducting Plate', 'Practical_Practice_1_FlipChip_BGA1_Practical_Practice_1_FlipChip_BGA_trace2', 'Conducting Plate', 'Practical_Practice_1_FlipChip_BGA1_Practical_Practice_1_FlipChip_BGA_trace3', 'Conducting Plate', 'Practical_Practice_1_FlipChip_BGA1_Practical_Practice_1_FlipChip_BGA_trace4', 'Conducting Plate', 'Practical_Project1_Flipchip_BGA_die_source', 'Source', 'Source1', 'Source')
+	$begin 'SupportedFeatures'
+		BCTypeNameSupported=true
+	$end 'SupportedFeatures'
+$end 'MeshRegion'
